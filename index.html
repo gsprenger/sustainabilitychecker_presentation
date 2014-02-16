@@ -1,9 +1,96 @@
-<html>
-  <head>
-    <title>Presentation of the Sustainability Checker</title>
-  </head>
-  <body>
-    <h1>Welcome!</h1>
-    <p>Nothing here for now!</p>
-  </body>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>reveal.js - The HTML Presentation Framework</title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sustainabilitychecker_presentation.css" id="theme">
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style type="text/css">
+			body {
+				color: #f0f0f0;
+			}
+			h1 {
+				color: #e7ad52;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!-- INTRO -->
+				<section>
+					<section>
+						<h1>Sustainability Checker</h1>
+						<div>Modélisation, développement et déploiement d'une application Web Ruby on Rails</div>
+						<br><br>
+						<div><em>Du 18 Septembre 2013 au 28 Mars 2014</em></div>
+					</section>
+
+					<section>
+						<h2>Plan</h2>
+					</section>
+
+				</section>
+
+				<!-- PART I: MuSIASEM -->
+				<section>
+					<section data-background="img/iaste-bg.png">
+						<h1>MuSIASEM</h1>
+						<div>Multi-Scale Integrated Analysis of Societal and Ecosystem Metabolism</div>
+					</section>
+
+				</section>
+
+				<!-- PART II: Sustainability Checker -->
+				<section>
+					<section>
+						<h1>Sustainability Checker</h1>
+						<div>Un outil interactif pour comprendre et débattre la problématique du développement durable</div>
+					</section>
+
+				</section>
+			</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				backgroundTransition: 'slide',
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+	</body>
 </html>
