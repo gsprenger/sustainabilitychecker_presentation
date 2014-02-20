@@ -144,6 +144,10 @@ body {
   text-shadow: 1px 1px 3px #fff;
 }
 
-.reveal li.tab {
+.reveal .tab {
   margin-left: 2em;
+}
+
+.reveal .img {
+  text-align: center;
 }
